@@ -2,12 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> --> 
+    <link rel = "stylesheet" href = "style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+   <!--  <style>
+    button {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+    } 
+    </style>  --> 
   </head>
   <body>
-    <div id="app"></div>
+    <div class = "options">
+      <button class="btn btn-success" onclick="location.href='http://google.com';"> Google</button>
+      <button type = "button"> About Us </button>
+      <!-- <form action="lahacks.com">
+        <input type="submit" value="LA Hacks" />
+      </form> -->
+      <button type = "button" action="lahacks.com"> LA Hacks </button>
+    </div>
+    <div id="app"> </div>
+    <div class = "objection"> Objection! </div> 
+    <div class = "description">A convenient way to identify fake news</div>
+    <!-- <div class = "scan_results"> Inconsistencies: 5 </div> -->
+      <div class = "scale">
+        <h3>Article Confidence:</h3>
+        <hr size = 20px color = grey border-width = 2px>
+      </div>
+      <div class = "image">
+        <img src="share.jpeg"
+              width = 200>
+      </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
