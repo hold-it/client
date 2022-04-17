@@ -1,17 +1,24 @@
 {
   "manifest_version": 3,
-  "name": "Rpce React Vite Example",
+  "name": "Objection!",
   "version": "1.0.0",
   "action": {
     "default_popup": "index.html"
   },
+  "browser_action": {},
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
   "content_scripts": [
     {
       "js": [
         "assets/content-script-loader.content-script.js.js"
       ],
       "matches": [
-        "https://*.nytimes.com/*"
+        "<all_urls>"
       ]
     }
   ],
